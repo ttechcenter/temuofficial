@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Temesgan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+</head>
+<body>
+    
+<!-- header design -->
+<header class="header">
+   <a href="#" class="logo">TTech. <span class="animate" style="--i:4;"></span></a>
+   <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:6;"></span></div>
+   <nav class="navbar">
+     <a href="#home" class="active">Home</a>
+     <a href="#about">About</a>
+     <a href="#background">Background</a>
+     <a href="#skill">Skills</a>
+     <a href="#services">Services</a>
+     <a href="#contact">Contact</a>
+
+     <span class="active-nav"></span>
+     <span class="animate" style="--i:2;"></span>
+   </nav>
+</header>
+<!-- home -->
+<section class="home animate-section" id="home">
+    <div class="home-content">
+       <h1>Hi, I'm <span>Temesgan Nedi</span></h1>
+       <div class="text-animate">
+          <h3>Full-Stack Developer</h3></span>
+       </div>
+       <p>
+        Innovative Junior Full-Stack Developer |
+         Programming Trainer | Skilled in JavaScript, React, Angular, Node.js, MongoDB, & More |
+          Committed to Crafting Cutting-Edge Solutions | Ready to Make an Impact in Tech
+         
+        </p>
+
+       <div class="btn-box">
+          <a href="doc/TEMESGAN NEDI.pdf" class="btn">Download CV</a>
+          <a href="tel:+251964196866" class="btn">Let's Talk</a>
+       
+       </div>
+    </div>
+
+    <div class="home-sci">
+        <a href="https://t.me/temutech2025"><i class="bx bxl-telegram"></i></a>
+        <a href="https://wa.me/+251964196866"><i class="bx bxl-whatsapp"></i></a>
+        <a href="http://www.linkedin.com/in/temesgan-nedi"><i class="bx bxl-linkedin"></i></a>
+    </div>
+    <!-- <div class="home-imghover"><span class="animate" style="--i:7;"></span></div> -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup" id="popup">   
+            <span class="close" id="closePopup">&times;</span>  
+            <div class="popup-content"> 
+                <p style="font-size: 2rem;font-weight:bold;">Welcome to My Website!</p>
+                <p style="font-size: 1rem; ">Do you want to learn Courses at anytime from anywhere? </p>
+                <p style="font-size: 1.2rem;">Please fill this</p>
+              <form onsubmit="sendEmail2(); reset(); return false;">
+                <input  type="email" placeholder="Your Email" class="email2" id="emailInput" required> 
+                <input  type="number" placeholder="Your Phone Number" class="phone2" id="emailInput" required> 
+                <input  type="text" placeholder="Course Name" class="course" id="emailInput" required> 
+                <button type="submit">Send Form</button>
+              </form>
+                <p style="font-size: 1rem;margin-top:5%;">To check my Projects <span style="color: orangered;"><a href="https://github.com/ttechcenter">Click Here!</a></span></p>
+                <p style="font-size: 1.2rem;margin-top:5%;">Thank You!</p>
+            </div>
+        </div>
+       
+    </div>
+</section>
+
+<!-- about  -->
+
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+    <div class="about-img">
+        <img src="img/SSnapchat-1413197183.jpg" alt="">
+        <span class="circle-span"></span>
+        <span class="animate scroll" style="--i:2;"></span>
+    </div>
+
+    <div class="about-content">
+        <h3>Full-stack Developer <span class="animate scroll" style="--i:2;"></span></h3>
+        <p>🎓  As a proud graduate of Haramaya University with a BSc in Computer Engineering and 
+            a diploma in Information Technology Management from Alison Academy,
+             I’ve dedicated my career to empowering others through technology.
+              My journey began as a Software Trainer at Eagle Computer PLC, where I spent
+               a year honing my ability to translate complex technical knowledge into accessible learning experiences. 
+            
+             <br><br><span class="animate scroll" style="--i:3;"></span><span id="dots"></span> 
+            <span id="more">
+                🚀 Currently, I’m shaping the minds of aspiring tech professionals.
+                 I continue to share my passion for software, nurturing the next generation of innovators. 
+                 But that’s not all – I’m also fervently expanding my expertise as a Full Stack Developer. 
+                 This dual path has allowed me to not only teach but also to create.<br><br>
+
+             💡 I thrive on the challenge of full stack development, 
+              where I can bring useful and innovative solutions to life. 
+              It’s more than a job; it’s a calling to build something new, 
+              something impactful. Whether it’s crafting intuitive user interfaces or 
+                engineering robust backend systems, I’m all about delivering a seamless and
+                functional digital experience.<br><br>
+
+             🌟 My aspiration? To merge my love for teaching with my full stack development skills, 
+             fostering an environment where creativity meets functionality, and where learning leads to creating.
+              <br><br>
+              <Span style="font-weight:bold;color: rgb(255,251,0);">Let’s connect and explore how we can innovate together!  </Span></span> </p>      
+        
+        <div class="btn-box btns">
+            <a  class="btn" onclick=myFunction() id="myBtn">Read More</a>
+            <span class="animate scroll" style="--i:5;">
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section class="edu" id="background">
+   <h2 class="heading">My <span>Education</span> <span class="animate scroll" style="--i:1;"></span></h2>
+
+   <div class="edu-row">
+    <!-- Education -->
+     <div class="edu-col">
+        <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+
+        <div class="edu-box">
+            <div class="edu-con">
+                   <div class="content">
+                       <div class="year"><i class='bx bxs-calendar'></i>2017 - 2018</div>
+                       <h3>BSc. Degree in Computer Engineering - Haramaya University</h3>
+                       <p>As a proud graduate of Haramaya University with a BSc in Computer Engineering and 
+                        a diploma in Information Technology Management from Alison Academy, 
+                        I’ve dedicated my career to empowering others through technology.</p>
+                    </div>
+            </div>
+            <div class="edu-con">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i>2023</div>
+                        <h3>Diploma in Information Technology - Alison Academy</h3>
+                        <p>As a proud graduate of Haramaya University with a BSc in Computer Engineering and 
+                            a diploma in Information Technology Management from Alison Academy, 
+                            I’ve dedicated my career to empowering others through technology.</p>
+                    </div>
+            </div>
+            <span class="animate scroll" style="--i:2;">
+        </div>
+      </div>
+     
+      <!-- Experience -->
+      <div class="edu-col">
+        <h3 class="title">Experience<span class="animate scroll" style="--i:3;"></span></h3>
+
+        <div class="edu-box">
+            <div class="edu-con">
+                   <div class="content">
+                       <div class="year"><i class='bx bxs-calendar'></i>2022 - Present</div>
+                       <h3>Cris Computer School - Software Trainer & Developer</h3>
+                       <p>As a proud graduate of Haramaya University with a BSc in Computer Engineering and 
+                        a diploma in Information Technology Management from Alison Academy, 
+                        I’ve dedicated my career to empowering others through technology.</p>
+                    </div>
+            </div>
+            <div class="edu-con">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i>2021 - 2022</div>
+                        <h3>Eagle Computer PLC. - Assistant Trainer</h3>
+                        <p>As a proud graduate of Haramaya University with a BSc in Computer Engineering and 
+                            a diploma in Information Technology Management from Alison Academy, 
+                            I’ve dedicated my career to empowering others through technology.</p>
+                    </div>
+            </div>
+            <span class="animate scroll"  style="--i:3;"></span>
+        </div>
+       
+      </div>
+   </div>
+</section>
+
+
+<!-- Skills -->
+
+<section class="skill" id="skill">
+    <h2 class="heading">My <span>Skills</span><span class="animate scroll"  style="--i:1;"></span></h2>
+
+    <div class="skill-row">
+        <div class="skill-col">
+            <h3 class="title">Coding Skills<span class="animate scroll"  style="--i:2;"></span></h3>
+
+            <div class="skill-box">
+                <div class="skill-con">
+                    <div class="progress">
+                        <h3>HTML - CSS -BootStrap <span>95%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                
+                    <div class="progress">
+                        <h3>Javascript <span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                
+                    <div class="progress">
+                        <h3>React.js<span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>Angular - Vue.js <span>75%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>Python <span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>SQL - > MySQL - MongoDB<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                
+                    <span class="animate scroll"  style="--i:2;"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- professional Skills -->
+
+        <div class="skill-col">
+            <h3 class="title">Professional Skills<span class="animate scroll"  style="--i:3;"></span></h3>
+
+            <div class="skill-box">
+                <div class="skill-con">
+                    <div class="progress">
+                        <h3>Front-End Development <span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>Back-End Development <span>70%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                
+                    <div class="progress">
+                        <h3>UI/UX Design <span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                
+                    <div class="progress">
+                        <h3>Data Analysis <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>Database Management <span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>Database Development <span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <span class="animate scroll"  style="--i:3;"></span>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+</section>
+<!-- --------Services---------- -->
+<section class="service" id="services">
+      <h2 class="heading">My Services <span class="animate scroll"  style="--i:1;"></span></h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Programming Training</h3>
+          <p>
+            I train individuals with variety of programming languages from basic to advanced concepts.  
+          </p>
+        </div>
+        <span class="animate scroll"  style="--i:2;"></span>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+          <h3>Kids computer Training</h3>
+          <p>
+            I train kids with basic computer programming skills and develop their interest in the areas of computer science.
+          </p>
+          <p>Using Scratch, Kodu and more....</p>
+        </div>
+        <span class="animate scroll"  style="--i:3;"></span>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Front-End Development</h3>
+          <p>
+            I develope user friendly and attractive  responsive websites design.
+             
+          </p>
+        </div>
+        <span class="animate scroll"  style="--i:4;"></span>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-terminal"></i>
+          </div>
+          <h3>API Development</h3>
+          <p>
+            creating interfaces that allow different software systems to communicate with each other. 
+            I design, document, and secure APIs, ensuring they perform well and handle errors gracefully.
+          </p>
+        </div>
+        <span class="animate scroll"  style="--i:6;"></span>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-file-code"></i>
+          </div>
+          <h3>API Integration</h3>
+          <p>
+            connecting different software components -- Back-End with Front-End
+          </p>
+        </div>
+        <span class="animate scroll"  style="--i:5;"></span>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3>Database development and Management</h3>
+          <p>
+            Create database schemas, write SQL queries, and manage indexes.
+          </p>
+          <p>Translate business needs into data models.</p>
+          <p> Monitoring performance, handling security, and troubleshooting.</p>
+        </div>
+        <span class="animate scroll"  style="--i:7;"></span>
+      </div>
+    </div>
+  </section>
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span><span class="animate scroll"  style="--i:1;"></span></h2>
+ <div class="contact-row">
+  <div class="contact-column">
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <div class="input-box">
+          <div class="input-field">
+              <input type="text" id="name" placeholder="Full Name" required>
+              <span class="focus"></span>
+          </div>
+          <div class="input-field">
+              <input type="text" id="email" placeholder="Email Address" required>
+              <span class="focus"></span>
+          </div>
+          <span class="animate scroll"  style="--i:2;"></span>
+      </div>
+      <div class="input-box">    
+          <div class="input-field">
+              <input type="number" id="phone" placeholder="Phone Number" required>
+              <span class="focus"></span>
+          </div>
+          <div class="input-field">
+              <input type="text" id="subject" placeholder="Email Subject" required>
+              <span class="focus"></span>
+          </div>
+          <span class="animate scroll"  style="--i:3;"></span>
+      </div>
+  
+      <div class="textarea-field">
+          <textarea name="" id="message" cols="90" rows="10" placeholder="Write Your Message" required></textarea>
+          <span class="focus"></span>
+          <span class="animate scroll"  style="--i:4;"></span>
+      </div>
+  
+       
+       <div class="btn-box btns">
+           <button type="submit" class="btn">Submit</button>
+           <span class="animate scroll"  style="--i:5;"></span>
+       </div>
+    </form>
+    </div>
+
+    <div class="contact-column">
+        <h2>Let's Be Partners <span class="animate scroll"  style="--i:6;"></span></h2>
+        <h2>& <span class="animate scroll"  style="--i:6;"></span></h2>
+        <h2>Do something great! <span class="animate scroll"  style="--i:6;"></span></h2>
+        <h3>Thank You! <span class="animate scroll"  style="--i:6;"></span></h3>
+       
+    </div>
+
+ </div>
+ </section>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Temesgan | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-icontop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
